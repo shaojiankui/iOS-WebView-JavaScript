@@ -99,4 +99,10 @@
     NSString *tempString2 = [NSString stringWithFormat:@"document.getElementsByTagName('img')[0].src ='%@';",@"light_advice.png"];
     [self.myWeb stringByEvaluatingJavaScriptFromString:tempString2];
 }
+//修改标签字体
+- (IBAction)fontTouched:(id)sender {
+     NSString *tempString2 = [NSString stringWithFormat:@"document.getElementsByTagName('p')[0].style.fontSize='%@';",@"19px"];
+    [self.myWeb stringByEvaluatingJavaScriptFromString:tempString2];
+
+}
 @end

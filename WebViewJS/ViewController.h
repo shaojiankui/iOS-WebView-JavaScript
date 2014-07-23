@@ -21,4 +21,5 @@
 - (IBAction)insertDivHtml:(id)sender;
 - (IBAction)submitTouched:(id)sender;
 - (IBAction)replaceImgSrc:(id)sender;
+- (IBAction)fontTouched:(id)sender;
 @end
