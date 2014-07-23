@@ -2,11 +2,13 @@
 //  AppDelegate.m
 //  WebViewJS
 //
-//  Created by Jakey on 14-7-23.
-//  Copyright (c) 2014年 Jakey. All rights reserved.
+//  Created by jakey on 14-5-27.
+//  Copyright (c) 2014年 jakey. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

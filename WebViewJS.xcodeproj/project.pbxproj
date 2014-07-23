@@ -19,6 +19,14 @@
 		A2E71E26197F911B0055B687 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E71E0E197F911B0055B687 /* UIKit.framework */; };
 		A2E71E2E197F911B0055B687 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2E71E2C197F911B0055B687 /* InfoPlist.strings */; };
 		A2E71E30197F911B0055B687 /* WebViewJSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E71E2F197F911B0055B687 /* WebViewJSTests.m */; };
+		A2E71E40197F91360055B687 /* UIWebView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E71E3B197F91360055B687 /* UIWebView+Blocks.m */; };
+		A2E71E41197F91360055B687 /* UIWebView+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E71E3D197F91360055B687 /* UIWebView+Style.m */; };
+		A2E71E42197F91360055B687 /* WebView+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E71E3F197F91360055B687 /* WebView+Alert.m */; };
+		A2E71E45197F913D0055B687 /* light_advice.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E71E43197F913D0055B687 /* light_advice.png */; };
+		A2E71E46197F913D0055B687 /* light_illstration.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E71E44197F913D0055B687 /* light_illstration.png */; };
+		A2E71E49197F91420055B687 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E71E48197F91420055B687 /* ViewController.m */; };
+		A2E71E4B197F91E90055B687 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E71E4A197F91E90055B687 /* ViewController.xib */; };
+		A2E71E4D197F92260055B687 /* 1.html in Resources */ = {isa = PBXBuildFile; fileRef = A2E71E4C197F92260055B687 /* 1.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,18 @@
 		A2E71E2B197F911B0055B687 /* WebViewJSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebViewJSTests-Info.plist"; sourceTree = "<group>"; };
 		A2E71E2D197F911B0055B687 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2E71E2F197F911B0055B687 /* WebViewJSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewJSTests.m; sourceTree = "<group>"; };
+		A2E71E3A197F91360055B687 /* UIWebView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Blocks.h"; sourceTree = "<group>"; };
+		A2E71E3B197F91360055B687 /* UIWebView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Blocks.m"; sourceTree = "<group>"; };
+		A2E71E3C197F91360055B687 /* UIWebView+style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+style.h"; sourceTree = "<group>"; };
+		A2E71E3D197F91360055B687 /* UIWebView+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Style.m"; sourceTree = "<group>"; };
+		A2E71E3E197F91360055B687 /* WebView+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+Alert.h"; sourceTree = "<group>"; };
+		A2E71E3F197F91360055B687 /* WebView+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+Alert.m"; sourceTree = "<group>"; };
+		A2E71E43197F913D0055B687 /* light_advice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_advice.png; sourceTree = "<group>"; };
+		A2E71E44197F913D0055B687 /* light_illstration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_illstration.png; sourceTree = "<group>"; };
+		A2E71E47197F91420055B687 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A2E71E48197F91420055B687 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2E71E4A197F91E90055B687 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		A2E71E4C197F92260055B687 /* 1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 1.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +127,15 @@
 		A2E71E10197F911B0055B687 /* WebViewJS */ = {
 			isa = PBXGroup;
 			children = (
+				A2E71E39197F91360055B687 /* category */,
 				A2E71E19197F911B0055B687 /* AppDelegate.h */,
 				A2E71E1A197F911B0055B687 /* AppDelegate.m */,
+				A2E71E47197F91420055B687 /* ViewController.h */,
+				A2E71E48197F91420055B687 /* ViewController.m */,
+				A2E71E4A197F91E90055B687 /* ViewController.xib */,
+				A2E71E43197F913D0055B687 /* light_advice.png */,
+				A2E71E44197F913D0055B687 /* light_illstration.png */,
+				A2E71E4C197F92260055B687 /* 1.html */,
 				A2E71E1C197F911B0055B687 /* Images.xcassets */,
 				A2E71E11197F911B0055B687 /* Supporting Files */,
 			);
@@ -142,6 +169,19 @@
 				A2E71E2C197F911B0055B687 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2E71E39197F91360055B687 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				A2E71E3A197F91360055B687 /* UIWebView+Blocks.h */,
+				A2E71E3B197F91360055B687 /* UIWebView+Blocks.m */,
+				A2E71E3C197F91360055B687 /* UIWebView+style.h */,
+				A2E71E3D197F91360055B687 /* UIWebView+Style.m */,
+				A2E71E3E197F91360055B687 /* WebView+Alert.h */,
+				A2E71E3F197F91360055B687 /* WebView+Alert.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E71E4B197F91E90055B687 /* ViewController.xib in Resources */,
+				A2E71E46197F913D0055B687 /* light_illstration.png in Resources */,
 				A2E71E15197F911B0055B687 /* InfoPlist.strings in Resources */,
 				A2E71E1D197F911B0055B687 /* Images.xcassets in Resources */,
+				A2E71E4D197F92260055B687 /* 1.html in Resources */,
+				A2E71E45197F913D0055B687 /* light_advice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E71E49197F91420055B687 /* ViewController.m in Sources */,
+				A2E71E40197F91360055B687 /* UIWebView+Blocks.m in Sources */,
 				A2E71E1B197F911B0055B687 /* AppDelegate.m in Sources */,
 				A2E71E17197F911B0055B687 /* main.m in Sources */,
+				A2E71E41197F91360055B687 /* UIWebView+Style.m in Sources */,
+				A2E71E42197F91360055B687 /* WebView+Alert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
