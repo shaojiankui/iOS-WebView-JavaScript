@@ -22,4 +22,7 @@
 - (IBAction)submitTouched:(id)sender;
 - (IBAction)replaceImgSrc:(id)sender;
 - (IBAction)fontTouched:(id)sender;
+- (IBAction)locationTouched:(id)sender;
+- (IBAction)uploadTouched:(id)sender;
+- (IBAction)phoneTouched:(id)sender;
 @end

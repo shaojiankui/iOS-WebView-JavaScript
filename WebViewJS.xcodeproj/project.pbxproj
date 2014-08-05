@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A29B2822198F0F4400F184DE /* location.html in Resources */ = {isa = PBXBuildFile; fileRef = A29B2821198F0F4400F184DE /* location.html */; };
+		A29B2824198F121A00F184DE /* file.html in Resources */ = {isa = PBXBuildFile; fileRef = A29B2823198F121A00F184DE /* file.html */; };
+		A29B2826198F150E00F184DE /* phone.php in Resources */ = {isa = PBXBuildFile; fileRef = A29B2825198F150E00F184DE /* phone.php */; };
 		A2E71E0B197F911B0055B687 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E71E0A197F911B0055B687 /* Foundation.framework */; };
 		A2E71E0D197F911B0055B687 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E71E0C197F911B0055B687 /* CoreGraphics.framework */; };
 		A2E71E0F197F911B0055B687 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E71E0E197F911B0055B687 /* UIKit.framework */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A29B2821198F0F4400F184DE /* location.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = location.html; sourceTree = "<group>"; };
+		A29B2823198F121A00F184DE /* file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = file.html; sourceTree = "<group>"; };
+		A29B2825198F150E00F184DE /* phone.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = phone.php; sourceTree = "<group>"; };
 		A2E71E07197F911B0055B687 /* WebViewJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E71E0A197F911B0055B687 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2E71E0C197F911B0055B687 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +142,9 @@
 				A2E71E43197F913D0055B687 /* light_advice.png */,
 				A2E71E44197F913D0055B687 /* light_illstration.png */,
 				A2E71E4C197F92260055B687 /* 1.html */,
+				A29B2821198F0F4400F184DE /* location.html */,
+				A29B2823198F121A00F184DE /* file.html */,
+				A29B2825198F150E00F184DE /* phone.php */,
 				A2E71E1C197F911B0055B687 /* Images.xcassets */,
 				A2E71E11197F911B0055B687 /* Supporting Files */,
 			);
@@ -263,6 +272,9 @@
 				A2E71E46197F913D0055B687 /* light_illstration.png in Resources */,
 				A2E71E15197F911B0055B687 /* InfoPlist.strings in Resources */,
 				A2E71E1D197F911B0055B687 /* Images.xcassets in Resources */,
+				A29B2824198F121A00F184DE /* file.html in Resources */,
+				A29B2826198F150E00F184DE /* phone.php in Resources */,
+				A29B2822198F0F4400F184DE /* location.html in Resources */,
 				A2E71E4D197F92260055B687 /* 1.html in Resources */,
 				A2E71E45197F913D0055B687 /* light_advice.png in Resources */,
 			);
@@ -489,6 +501,7 @@
 				A2E71E35197F911B0055B687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2E71E36197F911B0055B687 /* Build configuration list for PBXNativeTarget "WebViewJSTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +510,7 @@
 				A2E71E38197F911B0055B687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

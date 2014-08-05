@@ -30,13 +30,7 @@
 }
 
 - (IBAction)loadTouched:(id)sender {
-    NSString *filePath = [[NSBundle mainBundle]pathForResource:@"1" ofType:@"html"];
-    
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    [self.myWeb loadRequest:request];
+    [self laodHtml:@"1"];
 }
 
 
@@ -105,4 +99,25 @@
     [self.myWeb stringByEvaluatingJavaScriptFromString:tempString2];
 
 }
+//定位
+- (IBAction)locationTouched:(id)sender {
+    [self laodHtml:@"location"];
+}
+//浏览文件
+- (IBAction)uploadTouched:(id)sender {
+    [self laodHtml:@"file"];
+}
+- (IBAction)phoneTouched:(id)sender {
+    
+}
+-(void)laodHtml:(NSString*)name{
+    NSString *filePath = [[NSBundle mainBundle]pathForResource:name ofType:@"html"];
+    
+    NSURL *url = [NSURL fileURLWithPath:filePath];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [self.myWeb loadRequest:request];
+}
+
 @end
