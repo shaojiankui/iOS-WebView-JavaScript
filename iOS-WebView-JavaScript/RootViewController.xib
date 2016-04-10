@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-ow-RIw">
+                    <rect key="frame" x="39" y="134" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50686961210000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wEc-YD-2Rb"/>
+                    </constraints>
+                    <state key="normal" title="UIWebView ==&gt; JavaScript">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIWebviewToJS:" destination="-1" eventType="touchUpInside" id="8bA-UF-Adr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcg-2C-Acv">
+                    <rect key="frame" x="39" y="312" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50686961210000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1zx-Gj-Xc6"/>
+                    </constraints>
+                    <state key="normal" title="JavaScript  ==&gt; WKWebView ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="JSToWKWebView:" destination="-1" eventType="touchUpInside" id="YQh-5x-ge6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpJ-Pk-wgP">
+                    <rect key="frame" x="39" y="187" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50686961210000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tOi-hL-dSu"/>
+                    </constraints>
+                    <state key="normal" title="JavaScript ==&gt; UIWebView">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="JSToUIWebview:" destination="-1" eventType="touchUpInside" id="kqM-Uk-Vjo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcK-uc-mAz">
+                    <rect key="frame" x="39" y="259" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50686961210000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="J9Y-oP-rIV"/>
+                    </constraints>
+                    <state key="normal" title="WKWebView ==&gt; JavaScript">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="WKWebViewToJS:" destination="-1" eventType="touchUpInside" id="vW0-om-x7T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZL-Q0-SRG">
+                    <rect key="frame" x="39" y="437" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50686961210000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eNm-eZ-D90"/>
+                    </constraints>
+                    <state key="normal" title="Objective-C ==&gt; JavaScriptCore ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OCCallJS:" destination="-1" eventType="touchUpInside" id="Odx-1N-3EG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-b6-7Gm">
+                    <rect key="frame" x="39" y="490" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50686961210000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DCB-RF-VbR"/>
+                    </constraints>
+                    <state key="normal" title="HighchartsWeb">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="HighchartsWeb:" destination="-1" eventType="touchUpInside" id="p9l-Qg-gAq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7V-mg-i5A">
+                    <rect key="frame" x="39" y="384" width="243" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50686961210000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="uMZ-QD-OpO"/>
+                    </constraints>
+                    <state key="normal" title="JavaScriptCore ==&gt;Objective-C">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="JSCallOC:" destination="-1" eventType="touchUpInside" id="5ee-pE-RlR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIWebView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2O-e4-nEk">
+                    <rect key="frame" x="8" y="105" width="88" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="57o-hZ-FCm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WKWebView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-jc-3dJ">
+                    <rect key="frame" x="8" y="225" width="98" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gZy-HJ-YyC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WKWebView 不支持JavaScriptCore的方式但提供message handler的方式为JavaScript 与Objective-C 通信" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv5-rG-wdF">
+                    <rect key="frame" x="8" y="75" width="304" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="Wrh-4Q-K6G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.66666666669999997" green="0.078431372550000003" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JavaScriptCore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-mK-hBP">
+                    <rect key="frame" x="8" y="355" width="117" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="XRk-RQ-hDS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NIf-mK-hBP" firstAttribute="top" secondItem="Pcg-2C-Acv" secondAttribute="bottom" constant="13" id="0C9-25-Om3"/>
+                <constraint firstItem="pzb-b6-7Gm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="6xF-Fa-YWQ"/>
+                <constraint firstAttribute="trailing" secondItem="vpJ-Pk-wgP" secondAttribute="trailing" constant="38" id="9ev-sG-rE4"/>
+                <constraint firstItem="xcK-uc-mAz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="DWV-AF-Wjf"/>
+                <constraint firstItem="Y7V-mg-i5A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="EMo-Mm-ZY4"/>
+                <constraint firstItem="pzb-b6-7Gm" firstAttribute="top" secondItem="xZL-Q0-SRG" secondAttribute="bottom" constant="23" id="EVQ-ua-reN"/>
+                <constraint firstAttribute="trailing" secondItem="Fu4-ow-RIw" secondAttribute="trailing" constant="38" id="FLh-Jr-XzM"/>
+                <constraint firstItem="Fu4-ow-RIw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="J9K-J1-FiU"/>
+                <constraint firstItem="xZL-Q0-SRG" firstAttribute="top" secondItem="Y7V-mg-i5A" secondAttribute="bottom" constant="23" id="Jnp-MC-OJ4"/>
+                <constraint firstItem="G2O-e4-nEk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="MkC-uz-Rdz"/>
+                <constraint firstItem="8aL-jc-3dJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="NdP-iR-Rti"/>
+                <constraint firstAttribute="trailing" secondItem="Pcg-2C-Acv" secondAttribute="trailing" constant="38" id="Q14-YT-6d4"/>
+                <constraint firstAttribute="trailing" secondItem="8aL-jc-3dJ" secondAttribute="trailing" constant="214" id="TbV-mh-0KK"/>
+                <constraint firstItem="xcK-uc-mAz" firstAttribute="top" secondItem="vpJ-Pk-wgP" secondAttribute="bottom" constant="42" id="UGf-OJ-JXj"/>
+                <constraint firstAttribute="trailing" secondItem="xZL-Q0-SRG" secondAttribute="trailing" constant="38" id="Uxj-9r-LT6"/>
+                <constraint firstItem="NIf-mK-hBP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="YVb-FJ-teI"/>
+                <constraint firstAttribute="trailing" secondItem="Yv5-rG-wdF" secondAttribute="trailing" constant="8" id="Z3L-zm-Pod"/>
+                <constraint firstItem="Fu4-ow-RIw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="134" id="aGD-QY-w6q"/>
+                <constraint firstItem="xZL-Q0-SRG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="buM-ES-BnB"/>
+                <constraint firstItem="vpJ-Pk-wgP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="cnD-qy-zWU"/>
+                <constraint firstItem="Y7V-mg-i5A" firstAttribute="top" secondItem="Pcg-2C-Acv" secondAttribute="bottom" constant="42" id="dgs-tj-V01"/>
+                <constraint firstItem="Yv5-rG-wdF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="eo2-UI-fdJ"/>
+                <constraint firstItem="8aL-jc-3dJ" firstAttribute="top" secondItem="vpJ-Pk-wgP" secondAttribute="bottom" constant="8" id="fXU-0Z-LwL"/>
+                <constraint firstAttribute="trailing" secondItem="Y7V-mg-i5A" secondAttribute="trailing" constant="38" id="gIh-bu-Qta"/>
+                <constraint firstAttribute="trailing" secondItem="xcK-uc-mAz" secondAttribute="trailing" constant="38" id="l65-nX-7tU"/>
+                <constraint firstAttribute="trailing" secondItem="pzb-b6-7Gm" secondAttribute="trailing" constant="38" id="oWh-5I-LqC"/>
+                <constraint firstItem="Pcg-2C-Acv" firstAttribute="top" secondItem="xcK-uc-mAz" secondAttribute="bottom" constant="23" id="rxq-Eg-c8U"/>
+                <constraint firstItem="Pcg-2C-Acv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="39" id="s6f-Qr-TKo"/>
+                <constraint firstItem="Yv5-rG-wdF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="v7f-gR-vWK"/>
+                <constraint firstItem="vpJ-Pk-wgP" firstAttribute="top" secondItem="Fu4-ow-RIw" secondAttribute="bottom" constant="23" id="vAv-0H-Iqw"/>
+                <constraint firstAttribute="trailing" secondItem="G2O-e4-nEk" secondAttribute="trailing" constant="224" id="xXF-0J-LrU"/>
+                <constraint firstAttribute="trailing" secondItem="NIf-mK-hBP" secondAttribute="trailing" constant="195" id="ykV-gw-pVb"/>
+                <constraint firstItem="G2O-e4-nEk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="105" id="zkS-VH-Xra"/>
+            </constraints>
+            <point key="canvasLocation" x="305" y="355"/>
+        </view>
+    </objects>
+</document>
