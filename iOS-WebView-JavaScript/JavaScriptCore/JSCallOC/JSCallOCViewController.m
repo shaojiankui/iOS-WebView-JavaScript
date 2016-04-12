@@ -86,6 +86,13 @@
         [view addSubview:sw];
         [weakSelf.view addSubview:view];
     };
+    //多参数
+    self.context[@"mutiParams"] =
+    ^(NSString *a,NSString *b,NSString *c)
+    {
+        NSLog(@"%@ %@ %@",a,b,c);
+    };
+    
 }
 
 #pragma mark - JSExport Methods
@@ -94,7 +101,7 @@
 {
     NSLog(@"%@", number);
     
-    NSNumber *result = [self calculateFactorialOfNumber:number];
+    NSNumber *result = [self calculateFactorialOfNumber:@([number integerValue])];
     
     NSLog(@"%@", result);
     

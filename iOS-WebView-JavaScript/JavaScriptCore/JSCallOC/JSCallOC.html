@@ -47,7 +47,7 @@
 <body style="background:#CDE; color:#FFF">
     
     <div>
-        <font size="3" color="black">输入一个整数：</font>
+        <font size="3"  color="black">输入一个整数：</font>
         <textarea  id="input" style="font-size:10pt;color:black;"></textarea>
     </div>
     <br/>
@@ -61,7 +61,7 @@
         <center>
             
             <br/>
-            <input type="button" value="计算阶乘" onclick="app.calculateForJS('JTdCJTIyZGl5X2lkJTIyJTNBJTIyMTklMjIlMkMlMjJ0aXRsZSUyMiUzQSUyMmRpeV9pb3MlMjIlMkMlMjJ1c2VyX2lkJTIyJTNBJTIyMSUyMiUyQyUyMmRpeV90eXBlJTIyJTNBJTIyMSUyMiUyQyUyMmRpeV9wbGF0Zm9ybSUyMiUzQSUyMmlvcyUyMiUyQyUyMmRpeV9kYXRhJTIyJTNBJTIyNzc3JTIyJTJDJTIyZGl5X3RpbWUlMjIlM0ElMjIxNDQ3MTM1ODU0LjIxMTUlMjIlMkMlMjJkaXlfcGljJTIyJTNBJTIyJTIyJTdE');" />
+            <input type="button" value="计算阶乘" onclick="app.calculateForJS(document.getElementById('input').value);" />
             <br/>
             <br/>
             
@@ -77,7 +77,10 @@
             <input type="button" value="addSubView" onclick="addSubView('view');" />
             <br/>
             <br/>
-            
+            <input type="button" value="多参数调用" onclick="mutiParams('参数1','参数2','参数3');" />
+            <br/>
+            <br/>
+            <br/>
             <a id="push" href="#" onclick="app.pushViewControllerTitle('SecondViewController','secondPushedFromJS');">
                 push to second ViewController
             </a>
