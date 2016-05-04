@@ -25,9 +25,9 @@
     // 声明WKScriptMessageHandler 协议
     [config.userContentController addScriptMessageHandler:self name:@"Native"];
     
-    self.myWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-64) configuration:config];
+    self.myWebView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
     self.myWebView.UIDelegate = self;
-    [self.view insertSubview:self.myWebView atIndex:0];
+    [self.view addSubview:self.myWebView];
     [self loadTouched:nil];
 }
 
@@ -45,43 +45,12 @@
         
         NSString *func = [param objectForKey:@"func"];
         
-        //调用本地函数1
-        if([func isEqualToString:@"addSubView"])
-        {
-            Class tempClass =  NSClassFromString([param objectForKey:@"view"]);
-            CGRect frame = CGRectFromString([param objectForKey:@"frame"]);
-            
-            if(tempClass && [tempClass isSubclassOfClass:[UIWebView class]])
-            {
-                UIWebView *tempObj = [[tempClass alloc] initWithFrame:frame];
-                tempObj.tag = [[param objectForKey:@"tag"] integerValue];
-                
-                NSURL *url = [NSURL URLWithString:[param objectForKey:@"urlstring"]];
-                NSURLRequest *request = [NSURLRequest requestWithURL:url];
-                [tempObj loadRequest:request];
-                [self.myWebView addSubview:tempObj];
-            }
-        }
-        //调用本地函数2
-        else if([func isEqualToString:@"alert"])
+        //调用本地函数
+        if([func isEqualToString:@"alert"])
         {
             [self showMessage:@"来自网页的提示" message:[param objectForKey:@"message"]];
-            
         }
-        //调用本地函数3
-        else if([func isEqualToString:@"callFunc"])
-        {
-            [self testFunc:[param objectForKey:@"first"] withParam2:[param objectForKey:@"second"]  andParam3:[param objectForKey:@"third"] ];
-            
-        }
-        //调用本地函数4
-        else if([func isEqualToString:@"testFunc"])
-        {
-            [self testFunc:[param objectForKey:@"param1"] withParam2:[param objectForKey:@"param2"]  andParam3:[param objectForKey:@"param3"] ];
-            
-        }
-        
-
+     
     }
 }
 -(void)testFunc:(NSString*)param1 withParam2:(NSString*)param2 andParam3:(NSString*)param3{

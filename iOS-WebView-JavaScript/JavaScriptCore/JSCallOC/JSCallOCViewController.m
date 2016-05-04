@@ -40,16 +40,8 @@
 {
     // 以 html title 设置 导航栏 title
     self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-    
-    // 禁用 页面元素选择
-    //[webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitUserSelect='none';"];
-    
-    // 禁用 长按弹出ActionSheet
-    //[webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitTouchCallout='none';"];
-    
     // Undocumented access to UIWebView's JSContext
     self.context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    
     // 打印异常
     self.context.exceptionHandler =
     ^(JSContext *context, JSValue *exceptionValue)

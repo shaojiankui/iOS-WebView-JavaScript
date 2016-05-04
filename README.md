@@ -6,8 +6,8 @@
 
 ###2.UIWebViews使用代理拦截和JavaScriptCore.framework进行交互
 
-* UIWebView 与 JavaScript.framework交互
-* JavaScript.framework 与 UIWebView 交互
+* UIWebView 与 JavaScript交互
+* JavaScript 与 UIWebView 交互
 
 * UIWebView 与 JavaScriptCore.framework交互
 * JavaScriptCore.framework 与 UIWebView 交互
