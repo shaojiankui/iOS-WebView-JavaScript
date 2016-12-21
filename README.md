@@ -12,7 +12,7 @@
 * UIWebView 与 JavaScriptCore.framework交互
 * JavaScriptCore.framework 与 UIWebView 交互
 
-####博文:https://www.skyfox.org/javascript-ios-navive-message.html
+####博文:http://www.skyfox.org/javascript-ios-navive-message.html
 
 
 ![image](https://raw.github.com/shaojiankui/WebViewJS/master/demo.png)
