@@ -107,6 +107,22 @@
 - (IBAction)uploadTouched:(id)sender {
     [self loadHtml:@"UIWebViewJS_file"];
 }
+//传输json
+- (IBAction)jsonTouched:(id)sender {
+    NSDictionary *dic =  @{@"key":@"sdasd",@"ke2y":@"asd"};
+    
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic
+                                                       options:0
+                                                         error:&error];
+    
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    NSString *s = [NSString stringWithFormat:@"testJSON('%@');",jsonString];
+    
+    [self.myWeb stringByEvaluatingJavaScriptFromString:s];
+    
+}
 
 -(void)loadHtml:(NSString*)name{
     NSString *filePath = [[NSBundle mainBundle]pathForResource:name ofType:@"html"];
