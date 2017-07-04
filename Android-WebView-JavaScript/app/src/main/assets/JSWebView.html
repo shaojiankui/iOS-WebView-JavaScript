@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <head>
+            
+            <title></title>
+            <script type="text/javascript">
+                
+            function callMobile(handlerInterface,handlerMethod,parameters){
+                 //handlerInterface由iOS addScriptMessageHandler与andorid addJavascriptInterface 代码注入而来。
+                var dic = {'handlerInterface':handlerInterface,'function':handlerMethod,'parameters': parameters};
+
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+                    window.webkit.messageHandlers[handlerInterface].postMessage(dic);
+                }else{
+                    //安卓传输不了js json对象
+                    window[handlerInterface][handlerMethod](JSON.stringify(dic));
+                }
+            }
+            function callMobileNative(handlerInterface,handlerMethod,parameters){
+                    callMobile("Native",handlerMethod,parameters);
+            }
+            </script>
+        </head>
+        <body>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <input type="button" value="打个招呼" onclick="callMobile('Native','alert',{'message':'你好么'})" />
+            
+         
+            
+            
+        </body>
+</html>

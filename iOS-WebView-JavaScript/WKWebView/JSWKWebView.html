@@ -6,22 +6,37 @@
             
             <title></title>
             <script type="text/javascript">
-            function callOC(func,param){
-                var url= "func=" + func;
-                for(var i in param)
-                {
-                    url = url + "&" + i + "=" + param[i];
-                    //alert(i);
-                    //alert(param[i]);
+            //本方法兼容安卓与iOS
+            function callMobile(handlerInterface,handlerMethod,parameters){
+                //handlerInterface由iOS addScriptMessageHandler与andorid addJavascriptInterface 代码注入而来。
+                var dic = {'handlerInterface':handlerInterface,'function':handlerMethod,'parameters': parameters};
+                
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+                    window.webkit.messageHandlers[handlerInterface].postMessage(dic);
+                }else{
+                    //安卓传输不了js json对象
+                    window[handlerInterface][handlerMethod](JSON.stringify(dic));
                 }
-                window.webkit.messageHandlers.Native.postMessage(url);
             }
+            function callMobileNative(handlerInterface,handlerMethod,parameters){
+                callMobile("Native",handlerMethod,parameters);
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             function callFunc(){
                 var stack = new Array();
                 stack["first"] = 3;
                 stack["second"] = "second";
                 stack["third"]  = new Date();
-                callOC("callFunc",stack);
+                callMobile("Native","callFunc",stack);
             }
             function testAlert(){
                 alert("捕获了webview的alert");
@@ -37,13 +52,14 @@
             <br>
             <input type="button" value="js callFunc" onclick="callFunc()" />
             
-            <input type="button" value="打个招呼" onclick="callOC('alert',{'message':'你好么'})" />
+            <input type="button" value="打个招呼" onclick="callMobile('Native','alert',{'message':'你好么'})" />
             
-            <input type="button" value="add个view" onclick="callOC('addSubView',{'view':'UIWebView','tag':'11111','urlstring':'http://www.baidu.com','frame':'{{0,200},{320,100}}'})" />
+            <input type="button" value="add个view" onclick="callMobile('Native','addSubView',{'view':'UIWebView','tag':'11111','urlstring':'http://www.baidu.com','frame':'{{0,200},{320,100}}'})" />
             
-            <input type="button" value="传个字典" onclick="callOC('testFunc',{'param1':76,'param2':155,'param3':76})" />
+            <input type="button" value="传个字典" onclick="callMobile('Native','testFunc',{'param1':76,'param2':155,'param3':76})" />
             
-            
+            <input type="button" value="Pay协议逻辑" onclick="callMobile('Pay','testFunc',{'param1':76,'param2':155,'param3':76})" />
+
             <input type="button" value="js中弹出原生alert" onclick="testAlert()" />
             
             
