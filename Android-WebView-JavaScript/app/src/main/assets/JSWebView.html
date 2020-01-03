@@ -15,7 +15,7 @@
                     window.webkit.messageHandlers[handlerInterface].postMessage(dic);
                 }else{
                     //安卓传输不了js json对象
-                    window[handlerInterface][handlerMethod](JSON.stringify(dic));
+                    window[handlerInterface][handlerMethod](parameters);
                 }
             }
             function callMobileNative(handlerInterface,handlerMethod,parameters){
@@ -32,9 +32,8 @@
             <br>
             
             <input type="button" value="打个招呼" onclick="callMobile('Native','alert',{'message':'你好么'})" />
-            
-         
-            
-            
+
+
+
         </body>
 </html>

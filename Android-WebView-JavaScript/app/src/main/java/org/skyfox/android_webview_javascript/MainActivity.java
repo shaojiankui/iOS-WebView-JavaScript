@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
     @JavascriptInterface
     public void alert(String param){
-        Log.i("A",param.toString());
+        Log.i("alert",param.toString());
 
 
     }
